@@ -1,0 +1,183 @@
+D.Srinivas
+31 years of experience
+10+ years as a freelance corporate trainer
+Clinetile Includes ....
+    Capgemini,     Cognizant,   Infosys
+    MPhasis,       Wipro,       HP
+    Samsung,       CGI          etc.,
+Full Stack Java Trainer
+Visakhapatnam, Andhra Pradesh
+
+dachepallisrinivas@yahoo.co.in
+630 573 0633
+-----------------------------------------------------------------------------------------
+
+Pre-Requisites
+----------------------
+1. Core Java
+        a) OOPS,  interfaces, abstract classes & methods, exception handling, collections
+        b) Java 8 features
+                -   Lamda Expressions, Stream API, functional interface,
+                    DateTimeAPI, Optional etc.,
+        c) JDBC
+2. Advanced Java
+        d) Servlets
+        e) JSP
+        f) JSTL (JSP Standard Tag Library)
+            i.      core tags
+                        <c:set
+                        <c:out
+                        <c:if
+                        <c:choose
+                        <c:for
+            
+            ii.     form tags
+            iii.    formatting tags
+            iv.     sql tags        (not important)
+            
+3.  Tools/Libraries
+    g) Maven
+        It is a build tool
+
+    h) Logging
+    i) JUnit 5
+
+4.  UI
+    j) HTML, CSS, Javascript, 
+
+5.  Database
+    k)  MySQL   (preferrable)
+
+6.  Framework
+    l) Spring Framework     (I will take care of)
+
+
+    Lab Setup:
+    ==================================
+    1. JDk 8 / 11
+    2. STS 4     (Spring Tool Suite)
+    3. MySQL 8.x
+
+    What is a Framework?
+        A framework is a large body (usually set of classes) of pre-defined code to which we can add our
+        own code to solve a problem in a specific domain.
+
+    Advantages of Framework?
+        efficiency, security, expense, support
+
+        eg: Hibernate, Struts 1.0, Struts 2.0, JSF, Spring etc.,
+
+    What is a Spring Framework?
+        It is a java development platform that provides comprehensive infrastruture support 
+        to develop java applications.
+        
+        One-Stop Shop
+
+        Spring handles the infrastructure, so that we can focus on application related code.
+
+    Advantages of Spring?
+        Light Weight
+        Pluggable
+        Open Source
+        reduce over all complexicity
+
+    
+    Spring Containers:
+        a) create and manage objects        (IoC - Inversion of Control)
+        b) inject dependencies              (DI - Dependency Injection)
+
+
+
+
+
+18-Oct-2022
+--------------------------
+Bean:
+    It is a managed class.    
+
+
+Sping Containers:
+    1) BeanFactory interface
+        a) it is the root interface for accessing the Spring Container,
+        b) it follows lazy loading
+        c) beans are only instantiating whenever we call a getBean()
+        d) used in small applications (like mobile apps)
+
+        implementation classes:
+        a) XMLBeanFactory 
+
+    2) ApplicationContext interface
+        it is the central interface wihtin a spring appplication that is used for providing configuration
+        information to the application.
+        It implements the BeanFactory interface.
+
+        implementation classes:
+        a) FileSystemXMLApplicationContext
+        b) ClassPathXMLApplicationContext
+        c) WebXMLApplicationContext
+        d) AnnotationConfigApplicationContext
+
+        supports MessageResource    (i18N)
+        access to resources such as URLs and Files
+        used in Enterprise level applications
+
+
+
+    Build Tools:
+    ----------------
+    1) Maven
+    2) Gradle
+
+
+    Maven Project
+        pom.xml             (project object model)
+        dependencies        (jar files)
+            groupId, artifactId, version, packaging (jar/war)     (xml)
+
+        maven central repository        (mvnrepository.com)
+        maven local repository          (.m2 folder)
+
+        archetypes:
+            quickstart
+            webapp
+
+19-Oct-2022
+-------------------------
+    bean configuration file         (.xml)
+
+    1) property injection      (literal injection | setter injection)
+
+    every class has only one object created by the container by default.
+
+
+    configurations can be given in 3 ways,
+    a) using xml file
+    b) using annotations
+    c) java based configuration
+    d) external configuration
+    
+
+   
+
+
+
+
+
+   
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+    
+
+
+

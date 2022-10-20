@@ -1,0 +1,21 @@
+package com.prak.ui;
+
+import com.prak.model.Employee;
+
+public class App1 {
+
+	public static void main(String[] args) {
+		Employee employee;
+		employee = new Employee();
+		employee.setEmpId(101);
+		employee.setName("srinivas");
+		employee.setSalary(10000.0);
+
+		System.out.println(employee);
+		System.out.println(employee.toString());
+		System.out.println(employee.hashCode());
+	}
+
+}
+
+
