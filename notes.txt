@@ -148,13 +148,27 @@ Sping Containers:
     1) property injection      (literal injection | setter injection)
 
     every class has only one object created by the container by default.
+    it is known as "single ton" design patterns.
 
 
-    configurations can be given in 3 ways,
+    configurations can be given in 4 ways,
     a) using xml file
     b) using annotations
     c) java based configuration
     d) external configuration
+
+20-Oct-2022
+--------------------------
+    2) constructor injection
+    3) array injection
+    4) list injection
+    5) set injection
+    6) map injection
+    7) bean injection
+
+    
+
+    
     
 
    

@@ -1,0 +1,9 @@
+package com.prak.model;
+
+public class Account {
+	private int accountNumber;
+	private String bankName;
+	private String bankBranch;
+	
+	
+}
