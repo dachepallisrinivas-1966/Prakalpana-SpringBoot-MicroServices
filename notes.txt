@@ -154,7 +154,7 @@ Sping Containers:
     configurations can be given in 4 ways,
     a) using xml file
     b) using annotations
-    c) java based configuration
+    c) java based configuration using annotations
     d) external configuration
 
 20-Oct-2022
@@ -168,7 +168,30 @@ Sping Containers:
 
     
 
-    
+21-OCt-2022
+---------------------------
+    annotation based configuration
+
+    1. bean configuration is done using annotations
+    2. stereo type annotations:
+	    @Component
+	    +	@Service
+	    +	@Repository
+	    +	@Controller
+	    +	@Configuration
+        +   @RestController
+
+    3. beans.xml
+        +   we use only one xml tag.
+        <annotation-config></annotation-config>
+
+
+    program-to-interface:
+    --------------------------
+        List<String> list = new ArrayList<>();
+
+        
+
     
 
    
