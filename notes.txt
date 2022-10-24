@@ -190,7 +190,33 @@ Sping Containers:
     --------------------------
         List<String> list = new ArrayList<>();
 
+
+24-Oct-2022
+===================================================================
+    java based configuration using annotations:
+
+        @Configuration
+        public class MyBeanConfig {
+            @Bean
+            public Scanner kbinput() {
+                return new Scanner(System.in);
+            }
+
+            @Bean
+            public LocalDate today() {
+                return LocalDate.now();
+            }
+        } 
+
+    @Autowired
+        field           field injection
+        constructor     constructor injection
+        setter          setter injection
+
         
+
+
+    
 
     
 
