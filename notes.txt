@@ -196,6 +196,7 @@ Sping Containers:
     java based configuration using annotations:
 
         @Configuration
+        @ComponentScan("basePackage")
         public class MyBeanConfig {
             @Bean
             public Scanner kbinput() {
@@ -208,15 +209,33 @@ Sping Containers:
             }
         } 
 
+    
+25-Oct-2022
+===============================================================
     @Autowired
         field           field injection
         constructor     constructor injection
         setter          setter injection
 
-        
-
+    -   byType  
+    -   byName          @Qualifier("beanId")
+                        it should be used in conjunction with @Autowired annotation.
 
     
+    SpEL  (Spring Expression Language)
+
+        ${key}
+
+
+    @PropertySource("classpath:propertyFileName")
+    public class MyBeanConfig {
+
+    }
+
+
+
+
+
 
     
 
