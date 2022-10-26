@@ -233,7 +233,70 @@ Sping Containers:
     }
 
 
+26-Oct-2022
+=========================================================
 
+                                                Spring Boot
+                                            -----------------------
+is a spring module that offers auto-configuration there by providing RAD.
+
+    Spring Core         IoC,DI
+    Spring Context      Autowiring and life cycle management
+    Spring SpEL         Expression Language
+
+        configure the bean config class, property source files ...
+
+    Spring AOP          Aspect Oriented Programming
+        configure AOP providers ...
+
+    Spring Web          Web MVC and Web Rest API Support
+        configure url-handler, view-resolvers, front controllers ...
+
+If you spring boot, all the configurations are taken care by it.
+
+Why Spring Boot?
+    RAD tool
+    Opinionated Dependencies
+    No XML based configuration
+    Convention over Configuration
+    Integrated Server For Web Development   -   (tomcat, jetty server)
+    Standardization of Micro Services   
+    Cloud Support
+
+Base Lines of Spring Boot 2.x?
+    Java 8
+    Spring 5.0
+    Hibernate 5.2
+    Tomcat 8.5
+    Jetty 9.4
+    Junit 5
+    Maven
+    Gradle 4.x
+
+Spring Boot Application?
+    a) using spring boot CLI
+    b) using start.spring.io   (spring initializer)
+    c) using STS, spring starter project
+
+
+Spring Boot Starters:
+------------------------
+spring-boot-starter-parent
+spring-boot-starter
+spring-boot-test
+
+
+@SpringBootApplication =        @SpringBootConfiguration        (@Configuration)
+                            +   @ComponentScan("thePackageNameInWhichCurrentClassExists")
+                            +   @EnableAutoConfiguration
+                            +   @PropertySource("classpath:application.properties")
+
+
+
+
+
+
+  
 
 
 
