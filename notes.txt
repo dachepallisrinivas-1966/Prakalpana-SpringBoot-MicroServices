@@ -292,8 +292,17 @@ spring-boot-test
                             +   @PropertySource("classpath:application.properties")
 
 
+27-Oct-2022
+=============================================================
+SpringApplication.run():
+    1. create an ApplicationContext. (all beans are created)
+    2. exceute all Spring Boot Runners if any.
+    3. Startup the embedded server if any.
+    4. destroy the ApplicationContext.
 
-
+Spring Boot Runners:
+    1. CommandLineRunner        void run(String[] args)
+    2. ApplicationRunner        void run(ApplicationArgs[] args)
 
 
   
