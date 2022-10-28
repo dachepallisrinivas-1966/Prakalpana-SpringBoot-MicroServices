@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\prakalpana\batch1\SpringWorkspace\spring-core-annotation-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -48,6 +49,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="spring-jdbc-demo"/>
 			<item value="spring-core-javabased-configuration-demo"/>
 			<item value="spring-core-annotation-demo"/>
 			<item value="spring-core-xml-demo"/>

@@ -2,4 +2,5 @@
 <typeInfoHistroy>
     <typeInfo handle="=spring-core-javabased-configuration-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.service{GreetService.java[GreetService" modifiers="513" timestamp="1666582003246"/>
     <typeInfo handle="=spring-boot-core-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.sbcd.service{GreetService.java[GreetService" modifiers="513" timestamp="1666839122636"/>
+    <typeInfo handle="=spring-jdbc-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.dao{ProductDAO.java[ProductDAO" modifiers="513" timestamp="1666926820142"/>
 </typeInfoHistroy>

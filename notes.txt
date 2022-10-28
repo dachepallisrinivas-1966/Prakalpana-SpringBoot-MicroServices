@@ -305,7 +305,66 @@ Spring Boot Runners:
     2. ApplicationRunner        void run(ApplicationArgs[] args)
 
 
-  
+28-Oct-2022
+=============================================================================
+
+
+                                        Spring JDBC
+                                    --------------------
+problems with JDBC:
+-------------------
+1. create the connection
+2. create statement, preparedstatement
+3. executing the query
+4. close the resources
+
+
+5. we need to perform exception handling
+6. we need to handle transaction management
+
+Spring JDBC advantages:
+------------------------
+1. no need to do all steps that are mentioned above.
+2. it provide methods to execute queries directly.
+
+API:  
+--------------------------------
+JdbcTemplate
+NamedParameterJdbcTemplate
+SimpleJdbcTemplate
+SimpleJdbcInsert 
+SimpleJdbcCall
+
+JdbcTemplate:
+---------------
+1. It takes care of creation and release of resources.
+2. It handles the exceptns
+
+methods:
+---------
+public int update(String query) : to insert, update, delete
+public int update(String query, Object ...args) : to insert, update, delete using PreparedStatement
+public void execute(String query): to DDL commands
+public T query(String sql, ResultSetExtractor rse): to fetch records using ResultSetExtractor
+public List query(String sql, RowMapper rm) : to fetch records using RowMapper
+
+
+
+                                    multi layered architecture
+                                ------------------------------------
+
+ui <-> service <-> dao <-> db
+
+ui          (presentation layer):       inputs & outputs                
+                                        all exception handling
+service:    (business logic layer)      computations, validations
+dao:        (data access layer)         database operations
+
+DTO:    Data Transfer Object
+
+
+
+
 
 
 
