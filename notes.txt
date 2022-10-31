@@ -338,7 +338,7 @@ SimpleJdbcCall
 JdbcTemplate:
 ---------------
 1. It takes care of creation and release of resources.
-2. It handles the exceptns
+2. It handles the exceptions
 
 methods:
 ---------
@@ -363,6 +363,18 @@ dao:        (data access layer)         database operations
 DTO:    Data Transfer Object
 
 
+31-Oct-2022
+==================
+RowMapper interface
+    mapRow()
+
+displayed products using Stream API
+    stream()
+    forEach()
+
+
+1-Nov-2022
+=================
 
 
 
