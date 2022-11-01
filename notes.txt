@@ -284,6 +284,8 @@ Spring Boot Starters:
 spring-boot-starter-parent
 spring-boot-starter
 spring-boot-test
+spring-boot-starter-data-jdbc
+
 
 
 @SpringBootApplication =        @SpringBootConfiguration        (@Configuration)
@@ -375,6 +377,79 @@ displayed products using Stream API
 
 1-Nov-2022
 =================
+                                                Full Stack Java Developer
+                                            --------------------------------
+
+Pre-Requisite:
+1. Very Good Logical / Programming Skills   ('C',C++)   
+        'C'         Procedure Oriented 
+        C++         Object Oriented
+
+
+
+Actual Course:
+------------------
+2. Databases
+        Oracle
+            SQL
+            PL/SQL
+
+3. Core Java    
+        Java 8
+
+4. Advanced Java
+        JDBC
+        HTML
+        CSS
+        Javascript
+        Servlet
+        JSP
+        JSTL
+        MVC Architecture
+
+5. FrameWorks
+        Hibernate
+        JPA Hibernate
+        Spring Course
+            Spring Core
+            Spring AOP
+            Spring JDBC
+            Spring MVC
+            Spring MVC Rest
+        
+            Spring Boot
+                Ioc & Dependency Injection 
+                SpEL
+                Spring Data 
+                    Spring Data JDBC
+                    Spring Data JPA
+                Spring Boot MVC
+                Spring Boot MVC Rest
+                Spring Boot MVC Data Rest
+
+6. Microservice
+
+
+                                    Full Stack Java Developer With Angular / React / VueJS
+                                ----------------------------------------------------------------
+                                                    (UI Developer)
+1. HTML
+2. CSS
+3. BootStrap
+4. JavaScript
+5. ES 6
+6. TypeScript       (Angular)
+7. Angular / React
+8. Integrations
+
+
+                                                    Spring Data
+                                            -----------------------------
+1. Spring Data JDBC
+        NamedParameterJdbcTemplate
+2. Spring Data JPA
+
+
 
 
 
