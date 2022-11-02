@@ -447,6 +447,11 @@ Actual Course:
                                             -----------------------------
 1. Spring Data JDBC
         NamedParameterJdbcTemplate
+            update
+            query
+            queryForObject
+        BeanPropertySqlParameterSource
+        MapSqlParameterSource
 2. Spring Data JPA
 
 
