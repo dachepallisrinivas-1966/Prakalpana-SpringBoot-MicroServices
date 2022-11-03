@@ -1,5 +1,7 @@
 package com.prak.ui;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -20,6 +22,9 @@ public class EmployeeUI implements ApplicationRunner {
 	
 	@Autowired
 	private Scanner kbin;
+	
+	@Autowired
+	private DateTimeFormatter dtf;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
@@ -50,8 +55,6 @@ public class EmployeeUI implements ApplicationRunner {
 			}
 		}
 		
-		
-		
 	}
 	
 	private void doList() {
@@ -66,9 +69,24 @@ public class EmployeeUI implements ApplicationRunner {
 	
 	
 	private void doAdd() {
+		Employee emp = new Employee();
+		System.out.println("Enter Name: ");
+		emp.setFullName(kbin.next());
+		System.out.println("Enter Basic Pay: ");
+		emp.setBasic(kbin.nextDouble());
+		System.out.println("Enter Join Date (dd-MM-yy): ");
+		emp.setJoinDate(LocalDate.parse(kbin.next(), dtf));
 		
+		emp = empService.save(emp);
+		System.out.println("Employee added");
 	}
 	
+	private void doRemove() {
+		System.out.println("EmpId: ");
+		long empId = kbin.nextLong();
+		empService.deleteById(empId);
+		System.out.println("Employee deleted");
+	}
 	
 	
 	
