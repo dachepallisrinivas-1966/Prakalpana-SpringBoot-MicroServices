@@ -1,0 +1,6 @@
+create table emps
+(emp_id int primary key auto_increment,
+ full_name varchar(20),
+ basic numeric(10,2),
+ join_date date
+ );

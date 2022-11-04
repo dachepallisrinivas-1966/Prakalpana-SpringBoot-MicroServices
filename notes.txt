@@ -427,7 +427,19 @@ Actual Course:
                 Spring Boot MVC Rest
                 Spring Boot MVC Data Rest
 
-6. Microservice
+6. Microservices
+        Design Patterns
+
+7. Tools required
+        Maven
+        Postman / Insomnia
+
+
+
+
+
+
+==================================================================================================
 
 
                                     Full Stack Java Developer With Angular / React / VueJS
@@ -442,6 +454,7 @@ Actual Course:
 7. Angular / React
 8. Integrations
 
+=====================================================================================================
 
                                                     Spring Data
                                             -----------------------------
@@ -455,6 +468,88 @@ Actual Course:
 2. Spring Data JPA
 
 
+                                                ORM Framework
+                                            --------------------
+                                        (Object Relational Mapping)
+
+
+SSAD : structured system analysis design
+OOAD : object oriented analysis design
+
+    class diagram
+    use case diagram
+    sequence diagram
+
+
+OOAD                    OOP                                 RDBMS
+---------------------------------------------------------------------------------------------
+Entity Definition       class                               table
+Entity                  object                              record / row / tuple
+properties              data members / fields               field / column / attribute               
+behaviours              member functions / methods          --------
+
+
+Relationships
+    Is-A                class  Employee                         Single Table Strategy
+                        {                                           all_emps    eid,fnm,sal,hra,ta,dur,etype
+                            Long empId;                                         (etype - discriminator column)
+                            String fullName;
+                            Double salary;                      Join Table Strategy
+                        }                                           emps    eid, fnm,sal
+                                                                    mgrs    hra,ta,eid
+                        class  Manager extends Employee             cems    dur, eid
+                        {                                       
+                            Double hra;                         Table Per Class Strategy
+                            Double ta;                              emps_only   eid,fnm,sal
+                        }                                           mgrs_only   eid,fnm,sal,hra,ta
+                                                                    cems_only   eid,fnm,sal,dur
+                        class ContractEmployee extends Employee
+                        {
+                            Integer contractDuration;
+                        }
+
+Has-A (Association)     
+    composition         class  Address                              emps    eid,fnm,sal,city,dist,state
+                        {                                           custs   cid,fnm,city,dist,state
+                            String city;
+                            String district;
+                            String state;
+                        }          
+
+                        class  Employee 
+                        {
+                            Long empId;
+                            String fullName;
+                            Double salary;
+                            Address address;
+                        }
+
+                        class Customer
+                        {
+                            Long custId;
+                            String fullName;
+                            Address address;
+                        }
+
+    Aggregation
+        one-to-one      class Employee                              emps        eid,fnm,sal         
+                        {                                           accounts    accnum,bank,branch,ifsc,eid
+                            Long empId;
+                            String fullName;
+                            Double salary;                          emps        eid,fnm,sal,accnum
+                                                                    accounts    accnum,bank,branch,ifsc
+                            BankAccount salAccount;             
+
+                        }
+                        class  BankAccount
+                        {
+                            String acNum;
+                            String bank;
+                            String branch;
+                            String ifsc;
+
+                            Employee accountHolder;
+                        }
 
 
 
