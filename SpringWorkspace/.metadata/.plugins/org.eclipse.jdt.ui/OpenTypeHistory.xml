@@ -5,4 +5,5 @@
     <typeInfo handle="=spring-jdbc-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.dao{ProductDAO.java[ProductDAO" modifiers="513" timestamp="1667186596997"/>
     <typeInfo handle="=spring-boot-data-jdbc-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.repo{EmployeeRepo.java[EmployeeRepo" modifiers="513" timestamp="1667356659447"/>
     <typeInfo handle="=spring-boot-data-jdbc-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.service{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1667357797285"/>
+    <typeInfo handle="=spring-boot-data-jpa-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.prak.service{BookService.java[BookService" modifiers="513" timestamp="1667876619192"/>
 </typeInfoHistroy>

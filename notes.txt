@@ -285,6 +285,7 @@ spring-boot-starter-parent
 spring-boot-starter
 spring-boot-test
 spring-boot-starter-data-jdbc
+spring-boot-starter-data-jpa
 
 
 
@@ -379,6 +380,9 @@ displayed products using Stream API
 =================
                                                 Full Stack Java Developer
                                             --------------------------------
+                                                ( 4 months training program
+                                                     1 hour per session )
+
 
 Pre-Requisite:
 1. Very Good Logical / Programming Skills   ('C',C++)   
@@ -394,7 +398,11 @@ Actual Course:
             SQL
             PL/SQL
 
-3. Core Java    
+3. Core Java 
+        IOStreams - java.io
+        NIO         (New IO)
+        Junit 
+        Logging
         Java 8
 
 4. Advanced Java
@@ -427,20 +435,16 @@ Actual Course:
                 Spring Boot MVC Rest
                 Spring Boot MVC Data Rest
 
-6. Microservices
+6.  Microservices
         Design Patterns
 
-7. Tools required
+7.  Tools required
+        Git
         Maven
         Postman / Insomnia
 
 
-
-
-
-
 ==================================================================================================
-
 
                                     Full Stack Java Developer With Angular / React / VueJS
                                 ----------------------------------------------------------------
@@ -552,7 +556,77 @@ Has-A (Association)
                         }
 
 
+ORM Frameworks:
 
+    Java EE Specifications:
+        JPA : Java Persistence API      
+        JTA : Java Transaction API
+
+    JPA Implementations:
+        +   Hibernate
+        +   TopLink
+        +   MyBatis/iBatis
+
+
+    Spring Data JPA         (Spring Boot Data JPA)
+        by default it use Hibernate as JPA implementation.
+        uses HikariCP.
+
+
+    Entity
+        if objects are persisted in a database.
+
+    @Entity                             :   class level
+    @Table(name = "table-name")         :   class level
+    @Id                                 :   field level             primary key
+    @GenerateValue
+        generation strategies
+        1. AUTO
+        2. IDENTITY
+        3. SEQUENCE
+        4. TABLE
+
+    @Column                             :   field level
+
+
+
+
+    CRUDRepository interface
+    JPARepository inteface
+
+        no code for your DAO layer.
+
+
+
+
+                                                Spring Web
+                                            ------------------
+    is a spring framework module that support Web MVC application and REST API applications.
+
+    Spring Web MVC
+    --------------
+
+    Model, View and Controller Architecture:
+
+
+                Repo(s) <---> Service <----->  Controller(s)    <--- Request ------- Client
+                                                    |                                  |
+                                                   model                              html 
+                                                    |                                  |
+                                                  view   ------------ Response ------->
+
+
+    Single Front Controller
+
+                Repo(s) <---> Service <----->  Controller(s)    <---> Front Controller <--- Request ------- Client
+                                                                            |                                  |
+                                                                          model                              html 
+                                                                            |                                  |
+                                                                           view   ------------ Response ------->
+
+
+    
+                                                                                         
 
 
     
