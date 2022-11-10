@@ -14,6 +14,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -25,10 +26,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.prak"/>
 		</list>
 		<list key="groupId">
+			<item value="com.prak"/>
 		</list>
 		<list key="artifactId">
+			<item value="spring-web-mvc-xml-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,15 +48,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.prak"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="spring-jdbc-demo"/>
-			<item value="spring-core-javabased-configuration-demo"/>
-			<item value="spring-core-annotation-demo"/>
-			<item value="spring-core-xml-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
