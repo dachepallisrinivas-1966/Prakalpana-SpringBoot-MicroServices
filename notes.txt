@@ -651,23 +651,31 @@ ORM Frameworks:
 
     How will the FrontController pickup an action from a controller for each request?
 
-         UrlHandler                     is an interface in spring web module.
+        UrlHandler                     is an interface in spring web module.
             ↓
             → SimpleUrlHandler
                     will locate the annotation @RequestMapping(value = "url", method = RequestMethod.GET/POST)
                     which is applied on the action method.
 
-    
+    How will the FrontController pickup a view for a given view name?
+
+        ViewResolver
+            ↓
+            → InternalResourceViewResolver
+                    prefix
+                    suffix
+
+            logical view name   : string that is returned from the action method the controller
+            physical file name  : prefix + logicalViewName + suffix
+
+                                /WEB-INF/view/hello.jsp
+
+            return "hello"      means    WEB-INF/view/hello.jsp
 
 
-                                                                                         
-
-
-    
-
-   
-
-
+    Which ApplicationContext spring web mvc introduces?
+        WebApplicationContext
+        
 
 
 

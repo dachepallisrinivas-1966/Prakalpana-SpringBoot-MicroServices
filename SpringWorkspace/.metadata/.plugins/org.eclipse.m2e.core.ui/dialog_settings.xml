@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\prakalpana\batch1\SpringWorkspace\spring-web-mvc-xml-demo"/>
 			<item value="D:\prakalpana\batch1\SpringWorkspace\spring-core-annotation-demo"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,13 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.prak"/>
 		</list>
 		<list key="groupId">
-			<item value="com.prak"/>
 		</list>
 		<list key="artifactId">
-			<item value="spring-web-mvc-xml-demo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

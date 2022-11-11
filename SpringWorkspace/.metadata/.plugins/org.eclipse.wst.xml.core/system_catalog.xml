@@ -7,8 +7,8 @@
   <system systemId="http://maven.apache.org/xsd/archetype-1.0.0.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.m2e.model.edit_1.18.2.20211002-1029.jar!/xsd/archetype-1.0.0.xsd"/>
   <system systemId="http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.m2e.model.edit_1.18.2.20211002-1029.jar!/xsd/archetype-catalog-1.0.0.xsd"/>
   <system systemId="http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.m2e.model.edit_1.18.2.20211002-1029.jar!/xsd/archetype-descriptor-1.0.0.xsd"/>
-  <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.xsd_2.18.0.v20210924-1719.jar!/cache/www.w3.org/2001/xml.xsd"/>
-  <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.xsd_2.18.0.v20210924-1719.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
+  <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.xsd_2.18.0.v20220616-0915.jar!/cache/www.w3.org/2001/xml.xsd"/>
+  <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.xsd_2.18.0.v20220616-0915.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
   <public publicId="-//LOG4J//DTD LOG4J//EN" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.springsource.ide.eclipse.commons.ui_4.13.0.202112031705.jar!/dtd/log4j-1.2.dtd" webURL="https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd"/>
   <public publicId="-//WAPFORUM//DTD WML 1.1//EN" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/wml11.dtd"/>
   <public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/xhtml1-strict.dtd" webURL="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
@@ -199,4 +199,8 @@
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_0.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.jst.standard.schemas_1.2.400.v202101070609.jar!/dtdsAndSchemas/web-partialresponse_2_0.xsd"/>
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_2.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.jst.standard.schemas_1.2.400.v202101070609.jar!/dtdsAndSchemas/web-partialresponse_2_2.xsd"/>
   <uri name="http://xmlns.jcp.org/xml/ns/javaee/web-partialresponse_2_3.xsd" uri="jar:file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.eclipse.jst.standard.schemas_1.2.400.v202101070609.jar!/dtdsAndSchemas/web-partialresponse_2_3.xsd"/>
+  <public publicId="-//Hibernate/Hibernate Mapping DTD 3.0//EN" uri="file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.18.v20220704-1525/dtd/hibernate-mapping-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.18.v20220704-1525/dtd/hibernate-configuration-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" uri="file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.hibernate.eclipse.mapper_5.4.18.v20220704-1525/dtd/hibernate-reverse-engineering-3.0.dtd"/>
+  <public publicId="-//Red Hat, Inc.//DTD Meta 1.0//EN" uri="file:/E:/softwares/sts-4.13.0.RELEASE/plugins/org.jboss.tools.common.model_3.17.400.v20220819-0934/schema/meta.dtd"/>
 </catalog>
