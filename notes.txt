@@ -673,11 +673,15 @@ ORM Frameworks:
             return "hello"      means    WEB-INF/view/hello.jsp
 
 
-    Which ApplicationContext spring web mvc introduces?
+    Which ApplicationContext spring web mvc uses?
         WebApplicationContext
         
 
+    ModelAndView:
+        (org.springframework.web.servlet)
+        both the model and view
 
+        
 
    
 

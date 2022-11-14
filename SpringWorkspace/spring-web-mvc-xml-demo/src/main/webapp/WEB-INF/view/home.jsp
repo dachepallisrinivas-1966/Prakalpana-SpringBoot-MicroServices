@@ -1,12 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Home Page</title>
-</head>
-<body>
-	<h2>Welcome to Spring Web MVC</h2>
-</body>
-</html>
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
+
+<jsp:include page="/header" />
+
+<section style="padding: 10px; min-height: 400px">
+	<h2>${pageTitle }</h2>
+
+	<h3>Developers</h3>
+	<c:forEach var="d" items="${developers }">
+		<li>${d }</li>
+	</c:forEach>
+	<ol>
+
+	</ol>
+</section>
+
+<jsp:include page="/footer" />
