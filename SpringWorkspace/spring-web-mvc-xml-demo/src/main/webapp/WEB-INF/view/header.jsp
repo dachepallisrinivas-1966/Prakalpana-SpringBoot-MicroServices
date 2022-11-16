@@ -15,6 +15,8 @@
 	</header>
 	<nav>
 		<a href="home">Home</a>
+		<a href="greet">Greet</a>
+		<a href="loan">Loan</a>
 	</nav>
 </body>
 </html>

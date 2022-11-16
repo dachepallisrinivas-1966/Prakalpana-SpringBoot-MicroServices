@@ -683,6 +683,14 @@ ORM Frameworks:
 
         
 
+    @ModelAttribute:
+        it is used for data binding.
+
+
+    Create a PayRoll Application using Spring Web MVC.
+
+    
+
    
 
 
