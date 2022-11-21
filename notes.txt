@@ -286,6 +286,9 @@ spring-boot-starter
 spring-boot-test
 spring-boot-starter-data-jdbc
 spring-boot-starter-data-jpa
+spring-boot-starter-web
+spring-boot-starter-Thymeleaf
+
 
 
 
@@ -590,8 +593,6 @@ ORM Frameworks:
 
 
 
-
-    CRUDRepository interface
     JPARepository inteface
 
         no code for your DAO layer.
@@ -690,6 +691,31 @@ ORM Frameworks:
     Create a PayRoll Application using Spring Web MVC.
 
     
+
+                                    Spring Boot Web MVC
+                                ------------------------------
+
+    JPARepository
+        Optional<E> findById(id)
+        List<E> findAll()
+        Entity save(entity)
+        void deleteById(id)
+        boolean existsById(id) 
+
+
+                                                    Thymeleaf
+                                                ------------------
+    1. Thymeleaf is a modern server-side java template engine for both web and standalone environments.
+    2. Capable of processing HTML, XML, Javascript, CSS and even plain text.
+    3. It's commonly used to generate HTML views for web applications.
+    4. Out of the box, Thymeleaf allows you to process six kinds of templates, each of which is called as
+       Template Mode.
+        HTML, XML, TEXT, Javascript, CSS, RAW
+    5. Thymeleaf template can be HTML page with some thymeleaf expressions.
+    6. It can also include dynamic content from thymeleaf expressions.
+
+
+                                
 
    
 

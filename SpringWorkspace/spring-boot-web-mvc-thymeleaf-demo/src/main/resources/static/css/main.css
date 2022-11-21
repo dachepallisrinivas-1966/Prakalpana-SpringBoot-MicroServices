@@ -1,0 +1,14 @@
+h2 {
+	font-family:arial;
+	font-size:2em;
+	text-transform:uppercase;
+}
+strong {
+	font-weight:700;
+	background-color:maroon;
+	color:yellow;
+}
+p {
+	font-family:sans-serif;
+	
+}
