@@ -715,7 +715,13 @@ ORM Frameworks:
     6. It can also include dynamic content from thymeleaf expressions.
 
 
-                                
+                                                In Memory Database
+                                                        (H2)
+                                            ----------------------------
+    schema.sql          :   you can place all DDL scripts
+    data.sql            :   you can place all your DML scripts
+
+    
 
    
 
