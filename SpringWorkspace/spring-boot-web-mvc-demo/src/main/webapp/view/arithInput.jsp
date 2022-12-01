@@ -3,7 +3,7 @@
 <section style="padding:10px; min-height:400px">
 	<h2>Arithmetic</h2>
 	
-	<form>
+	<form method="post">
 		<label>First Number:
 			<input type="text" name="operand1" />
 		</label>

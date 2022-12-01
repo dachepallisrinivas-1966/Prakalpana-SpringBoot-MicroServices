@@ -27,4 +27,5 @@
     <fullyQualifiedTypeName name="com.prak.model.Visitor"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
     <fullyQualifiedTypeName name="com.prak.model.ArithmeticModel"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

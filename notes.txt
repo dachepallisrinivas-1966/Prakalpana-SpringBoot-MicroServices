@@ -722,7 +722,13 @@ ORM Frameworks:
     data.sql            :   you can place all your DML scripts
 
     
+Spring Bean Scopes:
+1) singleton        (Default)
+2) prototype        (everytime we ask for a bean, a new object is returned from the container)
 
+3) request
+4) session
+5) global-session
    
 
 
