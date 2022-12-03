@@ -729,6 +729,21 @@ Spring Bean Scopes:
 3) request
 4) session
 5) global-session
+
+
+                                                Embedded Servers
+                                            ----------------------------
+1. embedded tomcat
+2. embedded jetty
+3. embedded undertow
+
+
+                                                Hibernate Validators
+                                              (Server Side Validations)
+                                            -----------------------------
+                                            
+
+
    
 
 
