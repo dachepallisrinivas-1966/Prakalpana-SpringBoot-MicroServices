@@ -33,4 +33,5 @@
     <fullyQualifiedTypeName name="javax.validation.constraints.PastOrPresent"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.prak.entity.Department"/>
 </qualifiedTypeNameHistroy>

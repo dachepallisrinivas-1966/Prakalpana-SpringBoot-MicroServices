@@ -22,7 +22,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "employees2")
 public class Employee implements Serializable {
 	private static final long serialVersionUID = 1L;
 
