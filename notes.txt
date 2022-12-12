@@ -809,7 +809,7 @@ Spring Bean Scopes:
     ResponseEntity  resp = new ResponseEntity(responseBody, httStatus)
 
     
-
+                /emps/1                 /1 is called PathVariables (PathParams)
     
 
 

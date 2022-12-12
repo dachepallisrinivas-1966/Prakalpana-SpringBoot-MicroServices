@@ -3,6 +3,8 @@ package com.prak.service;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	private EmployeeRepository empRepo;
 
+	@Transactional
 	@Override
 	public Employee add(Employee emp) throws EmployeeException {
 		if(emp!=null) {
