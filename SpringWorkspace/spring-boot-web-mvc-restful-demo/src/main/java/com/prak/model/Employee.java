@@ -24,7 +24,7 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 public class Employee {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long empId;
 	
 	@NotEmpty(message="firstName can not be empty")

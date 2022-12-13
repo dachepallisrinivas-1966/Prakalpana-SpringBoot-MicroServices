@@ -19,7 +19,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Autowired
 	private EmployeeRepository empRepo;
 
-	@Transactional
 	@Override
 	public Employee add(Employee emp) throws EmployeeException {
 		if(emp!=null) {
