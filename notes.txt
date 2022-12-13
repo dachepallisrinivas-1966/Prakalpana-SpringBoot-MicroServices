@@ -810,22 +810,69 @@ Spring Bean Scopes:
 
     
                 /emps/1                 /1 is called PathVariables (PathParams)
+                
+                /emps/clerk/srinivas   
+                
+                /emps?empId=1                       request param
+                /emps?desg=clerk&ename=srinivas     request param
+
+
+                /emps/1
+                /emps/10000
+                /emps/6305730633
+
+    
+{
+    "empId":0,
+    "firstName": "priya",
+    "lastName": "vadlamani",
+    "basic": 26000.0,
+    "joinDate": "2022-12-09",
+    "dept": "MARKETING",
+    "mobileNumber": "6305730653",
+    "email": "pv@gmail.com"
+}
+
+
+
+                                                Microservices
+                                        -------------------------------
+
+    Monolithic Approach:
+    
+        + Single unit of deployment
+        + applications are generally logically organized into modules
+
+        - modular scalability is not possible
+        - interoperability on technology is not possible.
+        - lack of upgradability
+
+    Microservices Approach:
+
+        + a pack (eco-system) if isolated individual executing applications where each app is called a
+          microservices.
+        + modular scalability
+        + interoperability is possible
+        + upgradability
+
+        Challenges
+            1. Decomposition
+            2. server addresses are dynamic due to scalability, hence difficult for inter-service communication.
+            3. database management
+            4. request tracing & logging
+            5. monitoring 
+
+    Microservice Design Patterns
+
+        
+
+
+        
     
 
 
-    
 
-
-
-
-
-
-
-
-
-    
-
-
+           
 
 
     
