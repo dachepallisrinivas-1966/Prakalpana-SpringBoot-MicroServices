@@ -864,10 +864,147 @@ Spring Bean Scopes:
 
     Microservice Design Patterns
 
-        
+	Decomposition design patterns
+		Decomposition by domain
+		Decomposition by sub domain
+		Strangler design pattern
+
+	Database Design Patterns
+		Shared Database Design Pattern
+		Per Service Database Design Pattern
+		
+	Integration Design Pattern
+		Gateway Design Pattern
+		Aggregator Design Pattern
+		Client Side Component Aggregation Design Pattern
+
+	Observability Design Patterns
+		Distributed Logging Design Pattern
+		Distributed Tracing Design Pattern
 
 
-        
+
+	
+
+   
+
+	Monolythic IncomeStatement Case Study
+		1. An AccountHolder has to register
+		2. An AccountHolder can update his profile
+		3. An AccountHolder can add a Txn
+		4. An AccountHolder can update a Txn
+		5. An AccountHolder can delete a Txn
+		6. An AccountHolder can retrieve all of his Txns periodically
+		7. An AccountHolder can retrieve the statement summary
+
+
+	Microservices Approach IncomeStatement Case Study
+	
+		Decomposition by domain
+			profile-service
+				1. An AccountHolder has to register
+				2. An AccountHolder can update his profile
+			txns-service
+				3. An AccountHolder can add a Txn
+				4. An AccountHolder can update a Txn
+				5. An AccountHolder can delete a Txn
+				6. An AccountHolder can retrieve all of his Txns periodically
+			statement-service
+				7. An AccountHolder can retrieve the statement summary
+
+		Decomposition by sub-domain
+			profile-service
+				AccountHolder (entity)
+					Long ahId, String fullName, String mobile, String mailId
+			txn-service
+				AccountHolder (entity)
+					Long ahId, Double currentBalance, Set<Txn> txns
+				Txn (entity)
+
+			statement-service
+				Statement	(model)
+				AccountHolder	(model)
+					Long ahId, String fullName, String mobile, String mailId, Double currentBalance			
+				Txn		(model)
+
+		Strangler design pattern
+			when a monolithic application is converted into microservice, this design pattern comes into picture.
+			it is about deployment.
+			both applications are executed simultaneously, slowly the transition happened.
+			concept of running monolithic and microservice based applications parallelly is known as 
+			"strangler design pattern".
+
+
+		
+	Database Design Patterns
+		Shared Database Design Pattern
+			it is not at all recommeded.
+			when a monolithic application is converted into microservice, the database should be converted.
+			but this is practically not possible, it leads to security issues.
+
+		Per Service Database Design Pattern
+			
+
+			profile-service		<----->		txns-service	<------->		statement-service
+				↑↓				      ↑↓				   
+			    profileDB				    txnsDB					
+
+			
+		        
+	Integration Design Pattern
+		Gateway Design Pattern
+
+			for each microservice, we have different ip addresses and ports.
+			as many services we have, those many addressess as well.
+
+			then how can we expect a client to talk to all of them?
+
+			this is where, gateway design pattern comes into picture.
+
+			above all the microservices, we create another microservice called as "gate-way service".
+
+			client will interfact with gateway, it run on fixed port number.
+			client will not interfact directly with any microservice.
+			it will talk to the gateway.
+			it is a common point of communication between client app and other microservices.	
+			gateway will redirect the request to respective microservice and the responses are also
+			routed in the sameway.
+
+			we need not develop gateway-service.
+
+			we spring cloud api gateway service.
+
+
+			
+			Angular / React / Android Client
+					↑↓
+				gateway-service
+				 (localhost:9000)
+				(spring cloud api gateway)
+					↑↓
+
+			profile-service		<----->		txns-service	<------->		statement-service
+			localhost:9101				localhost:9201				localhost:9301
+				↑↓				      ↑↓				   
+			    profileDB				    txnsDB					
+
+
+       Observability Design Patterns
+		it is to track the requests, monitor the performance.
+
+		tracing service, collect information from all the microservicesm that information is shared to a 
+		centralized service called "tracing service" (information like travel of the request,response time, log inforamtion etc.,)
+
+		from the tracing service, we can open the tracing database, we can debug and monitor requests.
+
+		here we will use a tool called "zipkin".
+		
+		on the microservices side, we use another tool called "sleuth".
+
+		sleuth will collect the information, assign a unique id for each request, it uses a tool called "zipkin-client",
+		give the data to "zipkin-server".
+		
+				
     
 
 
