@@ -883,7 +883,11 @@ Spring Bean Scopes:
 		Distributed Tracing Design Pattern
 
 
-
+	Cross-Cutting Deisgn Patterns
+		Discovery Service Design Pattern
+		Load Balancing Design Patern
+		External Configuration Design Pattern
+		Circuite Breaker Design Pattern
 	
 
    
@@ -1003,19 +1007,132 @@ Spring Bean Scopes:
 
 		sleuth will collect the information, assign a unique id for each request, it uses a tool called "zipkin-client",
 		give the data to "zipkin-server".
+
 		
+			Angular / React / Android Client
+					↑↓
+				gateway-service
+				 (localhost:9000)
+				(spring cloud api gateway)
+					↑↓
+				----------------------------------------------------------------------------
+			       ↑↓				    ↑↓					  ↑↓
+			profile-service		<----->		txns-service	<------->		statement-service
+			localhost:9101				localhost:9201				localhost:9301
+				↑↓				      ↑↓				   
+			    profileDB				    txnsDB		
+
+				sleuth				sleuth					sleuth
+				zipkin-client			zipkin-client				zipkin-client
+				  ↑↓					↑↓				   ↑↓
+				  ---------------------------------------------------------------------------
+						↑↓
+					    tracing-service
+					    (zipkin-server)
+	
+	Cross Cutting Design Pattern
+		Discovery Service Design Pattern:
+			
+			we must know where all the microservices are running.
+			we can give the list of addresses of all microservices before itself.
+			the problem here is again dynamic.
+			how do we expect gateway service can contact the remaining services when the addresses are dynamic?
+
+			in micro services, whenever a new instance is created or any existing instance is killed, a new address
+			is added to the "address-list". these addresses are informed to a reference point, so that one microservice
+			can talk to other.
+			
+			this reference point is known as "static standard registry" or "discovery-service".
+
+			discovery service always run on fixed port number.	(localhost:9000)
+			(netflix eureka discovery service)
 				
     
 
+			Angular / React / Android Client
+					↑↓
+				gateway-service			<-------------> discovery service
+				 (localhost:9999)				(localhost:9000)
+				(spring cloud api gateway)			(netflix eureka discovery service)
+					↑↓
+				----------------------------------------------------------------------------
+			       ↑↓				    ↑↓					  ↑↓
+			profile-service		<----->		txns-service	<------->		statement-service
+			localhost:9101				localhost:9201				localhost:9301
+			localhost:9102				localhost:9202				
+			localhost:9103				
+				↑↓				      ↑↓				   
+			    profileDB				    txnsDB		
 
+				sleuth				sleuth					sleuth
+				zipkin-client			zipkin-client				zipkin-client
+				  ↑↓					↑↓				   ↑↓
+				  ---------------------------------------------------------------------------
+						↑↓
+					    tracing-service
+					    (zipkin-server)
+	
 
-           
+           Load Balancing Design Pattern
 
+		if statement service want to contact to profile service, first it will ask the gateway service.
+		gateway service will talk to discovery-service and give all the 3 addresses of profile-service
+		to the statement service.
+
+		this is where load balance will income into picture.
+		(spring cloud load balancer)
+
+		on every microservice, we will put load balancer.
+		it used round robin algorithm, it sends request
+    
+
+			Angular / React / Android Client
+					↑↓
+				gateway-service			<-------------> discovery service
+				 (localhost:9999)				(localhost:9000)
+				(spring cloud api gateway)			(netflix eureka discovery service)
+					↑↓
+				----------------------------------------------------------------------------
+			       ↑↓				    ↑↓					  ↑↓
+			profile-service		<----->		txns-service	<------->		statement-service
+			localhost:9101				localhost:9201				localhost:9301
+			localhost:9102				localhost:9202				
+			localhost:9103				
+				↑↓				      ↑↓				   
+			    profileDB				    txnsDB		
+			spring cloud load balancer	  spring cloud load balancer		spring cloud load balancer
+
+				sleuth				sleuth					sleuth
+				zipkin-client			zipkin-client				zipkin-client
+				  ↑↓					↑↓				   ↑↓
+				  ---------------------------------------------------------------------------
+						↑↓
+					    tracing-service
+					    (zipkin-server)
 
     
 
 
-    
+	External configuration design pattern
+		configuration may change as the time goes on.
+		that is why we put all our configuration details outside our source code.	(eg: application.properties)
+	
+		we will write another microsercice known as "config service".
+		(spring cloud config server tool)
+		it is going to make a ".git" repo, it will have "profile.properties", "txs.propertice",
+		"statement.properties", "gateway.properties", which contain all configuration details.
+
+		we remove the configuration information from existing application.properties.
+
+		config service will provide respective .properties file whenever any microservice is launches for the first time.
+		if we modify any .propertuy file and commit to git repo, immediately it is informed to all instances of 
+		repspective microservice.
 
 
 
+
+    Implementing Budget Tracker (Income Statement Application)
+    step-1: bta-profiles
+
+                pom.xml ->  web, devtools, mysql-connector, data jpa
+                configuration   
