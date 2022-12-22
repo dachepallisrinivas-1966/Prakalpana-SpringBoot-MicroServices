@@ -1136,3 +1136,9 @@ Spring Bean Scopes:
 
                 pom.xml ->  web, devtools, mysql-connector, data jpa
                 configuration   
+
+    step-2: implementing discovery service and client side load balancing
+
+    
+
+
